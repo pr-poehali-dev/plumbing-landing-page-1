@@ -7,10 +7,15 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  const handleMobileMenuClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    setIsMobileMenuOpen(false);
+  };
 
   const services = [
     {
@@ -128,7 +133,7 @@ const Index = () => {
               Отзывы
             </a>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <a href="tel:+79001234567" className="text-lg font-semibold text-primary hover:text-accent transition-colors">
               +7 (900) 123-45-67
             </a>
@@ -136,7 +141,47 @@ const Index = () => {
               Вызов мастера
             </Button>
           </div>
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <Icon name={isMobileMenuOpen ? "X" : "Menu"} size={28} className="text-primary" />
+          </button>
         </div>
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white border-t animate-fade-in">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <a 
+                href="#services" 
+                className="text-muted-foreground hover:text-primary transition-colors py-2"
+                onClick={handleMobileMenuClick}
+              >
+                Услуги
+              </a>
+              <a 
+                href="#advantages" 
+                className="text-muted-foreground hover:text-primary transition-colors py-2"
+                onClick={handleMobileMenuClick}
+              >
+                Преимущества
+              </a>
+              <a 
+                href="#testimonials" 
+                className="text-muted-foreground hover:text-primary transition-colors py-2"
+                onClick={handleMobileMenuClick}
+              >
+                Отзывы
+              </a>
+              <a href="tel:+79001234567" className="text-lg font-semibold text-primary hover:text-accent transition-colors py-2">
+                +7 (900) 123-45-67
+              </a>
+              <Button size="lg" className="bg-accent hover:bg-accent/90 w-full">
+                Вызов мастера
+              </Button>
+            </div>
+          </div>
+        )}
       </header>
 
       <section className={`pt-32 pb-20 px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
