@@ -21,32 +21,32 @@ const Index = () => {
     {
       icon: 'Droplet',
       title: 'Устранение протечек',
-      description: 'Быстрый поиск и устранение любых протечек воды'
+      description: 'Быстро найду и устраню любые протечки воды'
     },
     {
       icon: 'Wrench',
       title: 'Замена труб',
-      description: 'Замена старых труб на современные коммуникации'
+      description: 'Поменяю старые трубы на современные'
     },
     {
       icon: 'Bath',
       title: 'Установка сантехники',
-      description: 'Монтаж ванн, раковин, унитазов, смесителей'
+      description: 'Установлю ванны, раковины, унитазы, смесители'
     },
     {
       icon: 'Waves',
       title: 'Прочистка засоров',
-      description: 'Устранение засоров любой сложности'
+      description: 'Прочищу засоры любой сложности'
     },
     {
       icon: 'Thermometer',
       title: 'Монтаж отопления',
-      description: 'Установка и обслуживание систем отопления'
+      description: 'Установлю и настрою систему отопления'
     },
     {
       icon: 'Settings',
       title: 'Техобслуживание',
-      description: 'Профилактика и ремонт сантехнического оборудования'
+      description: 'Проведу профилактику и починю оборудование'
     }
   ];
 
@@ -54,12 +54,12 @@ const Index = () => {
     {
       icon: 'Clock',
       title: 'Опыт 10+ лет',
-      description: 'Решаем задачи любой сложности'
+      description: 'Решу задачу любой сложности'
     },
     {
       icon: 'Zap',
-      title: 'Выезд за 1 час',
-      description: 'Работаем круглосуточно'
+      title: 'Приеду за 1 час',
+      description: 'Работаю круглосуточно'
     },
     {
       icon: 'Award',
@@ -68,48 +68,48 @@ const Index = () => {
     },
     {
       icon: 'CheckCircle',
-      title: 'Оригинальные запчасти',
-      description: 'Только сертифицированные материалы'
+      title: 'Качественные материалы',
+      description: 'Использую проверенные запчасти'
     }
   ];
 
   const steps = [
     {
       number: '01',
-      title: 'Заявка',
-      description: 'Оставьте заявку по телефону или через форму'
+      title: 'Звонок',
+      description: 'Позвоните или напишите мне в мессенджер'
     },
     {
       number: '02',
-      title: 'Выезд мастера',
-      description: 'Приезжаем в течение 1 часа'
+      title: 'Выезд',
+      description: 'Приеду в течение 1 часа'
     },
     {
       number: '03',
       title: 'Ремонт',
-      description: 'Выполняем работу быстро и качественно'
+      description: 'Сделаю работу быстро и качественно'
     },
     {
       number: '04',
       title: 'Оплата',
-      description: 'Оплата после завершения работ'
+      description: 'Оплатите после проверки результата'
     }
   ];
 
   const testimonials = [
     {
       name: 'Анна Петрова',
-      text: 'Быстро устранили протечку в ванной. Мастер приехал через 40 минут, работу выполнил за час. Очень довольна!',
+      text: 'Максим быстро устранил протечку в ванной. Приехал через 40 минут, работу сделал за час. Очень довольна!',
       rating: 5
     },
     {
       name: 'Дмитрий Сергеев',
-      text: 'Заменили все трубы в квартире. Работали аккуратно, убрали за собой. Цена соответствует качеству.',
+      text: 'Поменял все трубы в квартире. Работал аккуратно, убрал за собой. Цена честная.',
       rating: 5
     },
     {
       name: 'Ольга Иванова',
-      text: 'Установили новую сантехнику под ключ. Профессиональный подход, все работает отлично. Рекомендую!',
+      text: 'Установил новую сантехнику под ключ. Профессионал своего дела, все работает отлично. Рекомендую!',
       rating: 5
     }
   ];
@@ -120,7 +120,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Icon name="Droplets" size={32} className="text-primary" />
-            <span className="text-xl font-bold text-primary">СантехМастер</span>
+            <span className="text-xl font-bold text-primary">Сантехник Макс</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
@@ -134,12 +134,23 @@ const Index = () => {
             </a>
           </div>
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+79001234567" className="text-lg font-semibold text-primary hover:text-accent transition-colors">
-              +7 (900) 123-45-67
+            <a href="tel:+79016670370" className="text-lg font-semibold text-primary hover:text-accent transition-colors">
+              +7 (901) 667-03-70
             </a>
-            <Button size="lg" className="bg-accent hover:bg-accent/90">
-              Вызов мастера
-            </Button>
+            <div className="flex gap-2">
+              <Button size="lg" className="bg-accent hover:bg-accent/90" asChild>
+                <a href="https://t.me/+79016670370" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" size={20} className="mr-2" />
+                  Telegram
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white" asChild>
+                <a href="https://vk.me/79016670370" target="_blank" rel="noopener noreferrer">
+                  <Icon name="MessageCircle" size={20} className="mr-2" />
+                  VK
+                </a>
+              </Button>
+            </div>
           </div>
           <button
             className="md:hidden p-2"
@@ -173,11 +184,20 @@ const Index = () => {
               >
                 Отзывы
               </a>
-              <a href="tel:+79001234567" className="text-lg font-semibold text-primary hover:text-accent transition-colors py-2">
-                +7 (900) 123-45-67
+              <a href="tel:+79016670370" className="text-lg font-semibold text-primary hover:text-accent transition-colors py-2">
+                +7 (901) 667-03-70
               </a>
-              <Button size="lg" className="bg-accent hover:bg-accent/90 w-full">
-                Вызов мастера
+              <Button size="lg" className="bg-accent hover:bg-accent/90 w-full" asChild>
+                <a href="https://t.me/+79016670370" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" size={20} className="mr-2" />
+                  Написать в Telegram
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white w-full" asChild>
+                <a href="https://vk.me/79016670370" target="_blank" rel="noopener noreferrer">
+                  <Icon name="MessageCircle" size={20} className="mr-2" />
+                  Написать VK
+                </a>
               </Button>
             </div>
           </div>
@@ -187,20 +207,31 @@ const Index = () => {
       <section className={`pt-32 pb-20 px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">
-            Срочный ремонт сантехники
+            Сантехник с опытом 10+ лет
           </h1>
           <p className="text-2xl text-muted-foreground mb-8">
-            Выезд в течение 1 часа. Гарантия 2 года
+            Приеду в течение 1 часа. Даю гарантию 2 года
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-6 h-auto">
-            Заказать выезд мастера
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-6 h-auto" asChild>
+              <a href="https://t.me/+79016670370" target="_blank" rel="noopener noreferrer">
+                <Icon name="Send" size={24} className="mr-2" />
+                Telegram
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white text-lg px-8 py-6 h-auto" asChild>
+              <a href="https://vk.me/79016670370" target="_blank" rel="noopener noreferrer">
+                <Icon name="MessageCircle" size={24} className="mr-2" />
+                VK Мессенджер
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
       <section id="services" className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-primary mb-12">Наши услуги</h2>
+          <h2 className="text-4xl font-bold text-center text-primary mb-12">Что я делаю</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Card 
@@ -223,7 +254,7 @@ const Index = () => {
 
       <section id="advantages" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-primary mb-12">Почему выбирают нас</h2>
+          <h2 className="text-4xl font-bold text-center text-primary mb-12">Почему выбирают меня</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {advantages.map((advantage, index) => (
               <div 
@@ -244,7 +275,7 @@ const Index = () => {
 
       <section className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-primary mb-12">Как мы работаем</h2>
+          <h2 className="text-4xl font-bold text-center text-primary mb-12">Как я работаю</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <div 
@@ -315,13 +346,29 @@ const Index = () => {
                     className="min-h-32 text-lg resize-none"
                   />
                 </div>
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full bg-accent hover:bg-accent/90 text-lg h-14"
-                >
-                  Отправить заявку
-                </Button>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Button 
+                    size="lg" 
+                    className="bg-accent hover:bg-accent/90 text-lg h-14"
+                    asChild
+                  >
+                    <a href="https://t.me/+79016670370" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Send" size={20} className="mr-2" />
+                      Telegram
+                    </a>
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="border-primary text-primary hover:bg-primary hover:text-white text-lg h-14"
+                    asChild
+                  >
+                    <a href="https://vk.me/79016670370" target="_blank" rel="noopener noreferrer">
+                      <Icon name="MessageCircle" size={20} className="mr-2" />
+                      VK
+                    </a>
+                  </Button>
+                </div>
                 <p className="text-xs text-center text-muted-foreground">
                   Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
                 </p>
@@ -337,20 +384,24 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Droplets" size={28} className="text-accent" />
-                <span className="text-xl font-bold">СантехМастер</span>
+                <span className="text-xl font-bold">Сантехник Макс</span>
               </div>
-              <p className="text-white/70">Профессиональные сантехнические услуги с 2013 года</p>
+              <p className="text-white/70">Частный мастер-сантехник с опытом с 2013 года</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Контакты</h3>
               <div className="space-y-2 text-white/70">
                 <p className="flex items-center gap-2">
                   <Icon name="Phone" size={18} />
-                  <a href="tel:+79001234567" className="hover:text-accent transition-colors">+7 (900) 123-45-67</a>
+                  <a href="tel:+79016670370" className="hover:text-accent transition-colors">+7 (901) 667-03-70</a>
                 </p>
                 <p className="flex items-center gap-2">
-                  <Icon name="Mail" size={18} />
-                  <a href="mailto:info@santehmaster.ru" className="hover:text-accent transition-colors">info@santehmaster.ru</a>
+                  <Icon name="Send" size={18} />
+                  <a href="https://t.me/+79016670370" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Telegram</a>
+                </p>
+                <p className="flex items-center gap-2">
+                  <Icon name="MessageCircle" size={18} />
+                  <a href="https://vk.me/79016670370" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">VK Мессенджер</a>
                 </p>
               </div>
             </div>
@@ -360,7 +411,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center text-white/60">
-            <p>&copy; 2024 СантехМастер. Все права защищены.</p>
+            <p>&copy; 2024 Сантехник Макс. Частный мастер.</p>
           </div>
         </div>
       </footer>
