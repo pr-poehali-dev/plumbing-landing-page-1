@@ -150,6 +150,12 @@ const Index = () => {
                   VK
                 </a>
               </Button>
+              <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white" asChild>
+                <a href="https://max.mail.ru/chat/start?uuid=Tpd4lYK" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Mail" size={20} className="mr-2" />
+                  MAX
+                </a>
+              </Button>
             </div>
           </div>
           <button
@@ -199,6 +205,12 @@ const Index = () => {
                   Написать VK
                 </a>
               </Button>
+              <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white w-full" asChild>
+                <a href="https://max.mail.ru/chat/start?uuid=Tpd4lYK" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Mail" size={20} className="mr-2" />
+                  Написать MAX
+                </a>
+              </Button>
             </div>
           </div>
         )}
@@ -223,6 +235,12 @@ const Index = () => {
               <a href="https://vk.me/79016670370" target="_blank" rel="noopener noreferrer">
                 <Icon name="MessageCircle" size={24} className="mr-2" />
                 VK Мессенджер
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white text-lg px-8 py-6 h-auto" asChild>
+              <a href="https://max.mail.ru/chat/start?uuid=Tpd4lYK" target="_blank" rel="noopener noreferrer">
+                <Icon name="Mail" size={24} className="mr-2" />
+                MAX
               </a>
             </Button>
           </div>
@@ -346,7 +364,7 @@ const Index = () => {
                     className="min-h-32 text-lg resize-none"
                   />
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <Button 
                     size="lg" 
                     className="bg-accent hover:bg-accent/90 text-lg h-14"
@@ -366,6 +384,17 @@ const Index = () => {
                     <a href="https://vk.me/79016670370" target="_blank" rel="noopener noreferrer">
                       <Icon name="MessageCircle" size={20} className="mr-2" />
                       VK
+                    </a>
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="border-accent text-accent hover:bg-accent hover:text-white text-lg h-14"
+                    asChild
+                  >
+                    <a href="https://max.mail.ru/chat/start?uuid=Tpd4lYK" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Mail" size={20} className="mr-2" />
+                      MAX
                     </a>
                   </Button>
                 </div>
@@ -402,6 +431,10 @@ const Index = () => {
                 <p className="flex items-center gap-2">
                   <Icon name="MessageCircle" size={18} />
                   <a href="https://vk.me/79016670370" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">VK Мессенджер</a>
+                </p>
+                <p className="flex items-center gap-2">
+                  <Icon name="Mail" size={18} />
+                  <a href="https://max.mail.ru/chat/start?uuid=Tpd4lYK" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">MAX</a>
                 </p>
               </div>
             </div>
